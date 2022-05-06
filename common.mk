@@ -181,6 +181,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.face.sense_service.camera_id=1
 
+# FUSE passthrough
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.fuse.passthrough.enable=true
+
 # GPS
 LOC_HIDL_VERSION = 4.0
 TARGET_GPS_COMPONENT_VARIANT := gps
