@@ -52,8 +52,8 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">1500</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">1500</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">3000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">3000</integer>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
@@ -372,6 +372,7 @@
         <item>478.65</item>
     </array>
 
+
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
          config_screenThresholdLevels. The darkening threshold is calculated as
@@ -533,7 +534,7 @@
    <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
    <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
    <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
-   
+
    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
         manually by the user. Off by default, since the expected haptic feedback may not be
         available on some devices. -->
