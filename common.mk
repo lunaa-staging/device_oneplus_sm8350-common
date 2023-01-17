@@ -124,6 +124,13 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.device_config.runtime_native_boot.enable_uffd_gc=true \
     ro.dalvik.vm.enable_uffd_gc=true
 
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    dalvik.vm.dex2oat-filter=everything \
+    dalvik.vm.image-dex2oat-filter=everything
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
