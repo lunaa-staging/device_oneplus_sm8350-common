@@ -114,6 +114,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     android.frameworks.stats@1.0.vendor
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+PRODUCT_VENDOR_PROPERTIES += \
+    dalvik.vm.dex2oat64.enabled=true
+
+
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpm.idletimer.mode=default \
