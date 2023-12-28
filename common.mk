@@ -160,6 +160,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# FaceSense
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.face.sense_service.camera_id=1
+
 # GPS
 LOC_HIDL_VERSION = 4.0
 TARGET_GPS_COMPONENT_VARIANT := gps
