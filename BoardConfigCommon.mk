@@ -164,3 +164,6 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
 # Touch
 TARGET_POWER_FEATURE_EXT_LIB := //$(COMMON_PATH):libpowerfeature_ext_oplus
+
+# VNDK
+NEED_AIDL_NDK_PLATFORM_BACKEND := true
