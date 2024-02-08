@@ -195,6 +195,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.default \
+    init.kernel.post_boot-lahaina.sh \
+    init.kernel.post_boot-yupik.sh \
     init.oplus.rc \
     init.target.rc \
     ueventd.oplus.rc

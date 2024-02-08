@@ -45,3 +45,15 @@ prebuilt_etc {
     src: "ueventd.oplus.rc",
     device_specific: true,
 }
+
+sh_binary {
+    name: "init.kernel.post_boot-lahaina.sh",
+    src: "init.kernel.post_boot-lahaina.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.kernel.post_boot-yupik.sh",
+    src: "init.kernel.post_boot-yupik.sh",
+    vendor: true,
+}
